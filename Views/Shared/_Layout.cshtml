@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+    <link href="~/css/mediaquerries.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/js/script.js"></script>
+
+ 
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <title>AbdulRehman | Front-End Developer</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" >
+                <img src="AR.png" alt="">
+                <div class="name">
+                    AbdulRehman
+                </div>
+            </div>
+            <div class="list">
+                <ul class="nav-list" >
+                    <li class="nav-item hidOnMobile"><a href="#home">Home</a></li>
+                    <li class="nav-item hidOnMobile"><a href="#about">About</a></li>
+                    <li class="nav-item hidOnMobile"><a href="#qualification">Qualification</a></li>
+                    <li class="nav-item hidOnMobile"><a href="#services">Services</a></li>
+                    <li class="nav-item hidOnMobile"><a href="#projects">Projects</a></li>
+                    <li class="nav-item hidOnMobile"><a href="#contact">Contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><img src="menu.png" alt="" width="40px"></li>
+                </ul>
+                <ul class="sidebar" data-aos="zoom-in" data-aos-duration="1500">
+                    <li onclick=hideSidebar() style="margin-bottom: 10px;"><img src="close.png" alt="" width="35px"
+                            style="margin-left: 10px;"></li>
+                    <li class="nav-item" onclick=hideSidebar() style="margin-bottom: 5px;"><a href="#home">Home</a></li>
+                    <li class="nav-item" onclick=hideSidebar() style="margin-bottom: 5px;"><a href="#about">About</a></li>
+                    <li class="nav-item" onclick=hideSidebar() style="margin-bottom: 5px;"><a href="#qualification">Qualification</a></li>
+                    <li class="nav-item" onclick=hideSidebar() style="margin-bottom: 5px;"><a href="#services">Services</a></li>
+                    <li class="nav-item" onclick=hideSidebar() style="margin-bottom: 5px;"><a href="#projects">Projects</a></li>
+                    <li class="nav-item" onclick=hideSidebar() style="margin-bottom: 5px;"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section  -->
+
+    <mian class="mian">
+
+        @RenderBody()
+       
+    </mian>
+    <!-- footer -->
+    <footer>
+        <a href="#home">
+            <h5>Copyright All Rights Reserved</h5>
+        </a>
+    </footer>
+</body>
+</html>
