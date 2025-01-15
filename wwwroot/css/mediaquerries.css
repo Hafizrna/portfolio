@@ -383,9 +383,3 @@
     }
 }
 
-/* Footer */
-@media (max-width: 365px) {
-    footer a {
-        font-size: 12px;
-    }
-}

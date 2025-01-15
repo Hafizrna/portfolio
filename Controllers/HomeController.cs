@@ -18,7 +18,6 @@ namespace Portfolio.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.data = _context.Dbdata.ToList();
             return View();
         }
         [HttpPost]
@@ -39,6 +38,11 @@ namespace Portfolio.Controllers
                
             }
             return View("index");
+        }
+        public IActionResult admin()
+        {
+            ViewBag.data = _context.Dbdata.ToList();
+            return View();
         }
 
         public IActionResult Privacy()

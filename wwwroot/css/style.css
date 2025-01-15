@@ -671,7 +671,7 @@ main {
   background-position: center center;
   background-size: cover;
   width: 100vw;
-  height: 130vh;
+  height: 100vh;
   padding-top: 70px;
 }
 
@@ -842,23 +842,5 @@ textarea {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: #8ff500;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-
-/* Footer  */
-
-footer {
-  width: 100vw;
-  background-color: var(--color-bg-footer);
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-}
-
-footer a {
-  color: var(--color-text);
-  text-decoration: none;
 }
 
