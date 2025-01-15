@@ -4,8 +4,9 @@ namespace Portfolio.Data
 {
     public class Dbdata
     {
-        [Key]
+        
         public string name { get; set; }
+        [Key]
         public string phone { get; set; }
         public string message { get; set; }
     }
